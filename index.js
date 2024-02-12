@@ -10,17 +10,18 @@ function showYoungestStudent(students) {
     }
 }
 
-userDefinedStudents = [
+var userDefinedStudents = [
     { name: 'Alice', age: 25 },
     { name: 'Bob', age: 2 },
     { name: 'Charlie', age: 21 },
 ];
+
 console.log(showYoungestStudent(userDefinedStudents));
 
 // Using for loop and if statment to find the youngest students
-function showYoungestStudent2(students) {
-    var temp = "";
-    if (students.length === 0){
+/*function showYoungestStudent2(students) {
+   var temp = "";
+     if (students.length === 0){
         return "No students provided.";
     } else {
     for (var i = 0; i < students.length - 1; i++) {
@@ -33,5 +34,5 @@ function showYoungestStudent2(students) {
 }
 console.log(showYoungestStudent2(userDefinedStudents));
 
+module.exports = showYoungestStudent2;*/
 module.exports = showYoungestStudent;
-module.exports = showYoungestStudent2;
